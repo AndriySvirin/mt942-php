@@ -1,6 +1,6 @@
 <?php
 
-namespace AndrewSvirin\MT942\contracts;
+namespace EbicsApi\MT942\contracts;
 
 /**
  * Interface MarkInterface contains debit/credit mark constants.

@@ -1,8 +1,8 @@
 <?php
 
-namespace AndrewSvirin\MT942;
+namespace EbicsApi\MT942;
 
-use AndrewSvirin\MT942\contracts\MT942FormatterInterface;
+use EbicsApi\MT942\contracts\MT942FormatterInterface;
 
 /**
  * Main MT942 basic formatter settings.

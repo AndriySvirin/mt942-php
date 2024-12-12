@@ -1,0 +1,27 @@
+services:
+  php-mt942-php:
+    container_name: php-mt942-php
+    build:
+      context: php-cli
+    volumes:
+      - ~/.ssh:/home/root/.ssh
+      - ../:/var/www/mt942-php
+      - ./php-cli/php.ini:/usr/local/etc/php/php.ini:ro
+    tty: true
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      mt942-php-net:
+        ipv4_address: 172.151.0.3
+    environment:
+      PHP_IDE_CONFIG: "serverName=mt942-php"
+
+networks:
+  mt942-php-net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.151.0.0/24
+    driver_opts:
+      com.docker.network.bridge.name: br_ecpmt

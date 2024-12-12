@@ -1,8 +1,8 @@
 <?php
 
-namespace AndrewSvirin\MT942\models;
+namespace EbicsApi\MT942\models;
 
-use AndrewSvirin\MT942\MT942Validator;
+use EbicsApi\MT942\MT942Validator;
 use Symfony\Component\Validator\Constraints\Choice;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;

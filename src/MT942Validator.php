@@ -1,8 +1,8 @@
 <?php
 
-namespace AndrewSvirin\MT942;
+namespace EbicsApi\MT942;
 
-use AndrewSvirin\MT942\models\Transaction;
+use EbicsApi\MT942\models\Transaction;
 use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Component\Validator\ConstraintViolationListInterface;
 use Symfony\Component\Validator\Validation;

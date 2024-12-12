@@ -1,7 +1,7 @@
 {
-  "name": "andrew-svirin/mt942-php",
+  "name": "ebics-api/mt942-php",
   "type": "library",
-  "description": "PHP library for parse MT942 Swift format. Helper for EBICS.",
+  "description": "PHP library for parse MT942 Swift format. Helper module for EBICS.",
   "keywords": [
     "mt942",
     "swift",
@@ -17,11 +17,11 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "AndrewSvirin\\MT942\\": "src"
+      "EbicsApi\\MT942\\": "src"
     }
   },
   "require": {
-    "php": "^7.2 || ^8",
+    "php": "^7.4 || ^8",
     "symfony/validator": "^3.4|^4.0|^5.0"
   },
   "require-dev": {

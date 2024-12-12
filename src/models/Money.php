@@ -1,6 +1,6 @@
 <?php
 
-namespace AndrewSvirin\MT942\models;
+namespace EbicsApi\MT942\models;
 
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;

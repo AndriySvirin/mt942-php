@@ -1,9 +1,9 @@
 <?php
 
-namespace AndrewSvirin\tests\Unit;
+namespace EbicsApi\tests\Unit;
 
-use AndrewSvirin\MT942\MT942Normalizer;
-use AndrewSvirin\MT942\MT942Validator;
+use EbicsApi\MT942\MT942Normalizer;
+use EbicsApi\MT942\MT942Validator;
 use PHPUnit\Framework\TestCase;
 
 /**

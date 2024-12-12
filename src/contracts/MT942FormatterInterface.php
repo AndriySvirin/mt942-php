@@ -1,6 +1,6 @@
 <?php
 
-namespace AndrewSvirin\MT942\contracts;
+namespace EbicsApi\MT942\contracts;
 
 /**
  * Interface MT942Formatter contains normalization, de-normalization constants.
@@ -27,7 +27,7 @@ interface MT942FormatterInterface
     /**
      * Default delimiter.
      */
-    const DEFAULT_DELIMITER = "\r\n-\r\n";
+    const DEFAULT_DELIMITER = PHP_EOL . '-' . PHP_EOL;
 
     /**
      * Specify manual delimiter.

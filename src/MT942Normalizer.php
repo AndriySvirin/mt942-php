@@ -1,15 +1,15 @@
 <?php
 
-namespace AndrewSvirin\MT942;
+namespace EbicsApi\MT942;
 
-use AndrewSvirin\MT942\models\AccountIdentification;
-use AndrewSvirin\MT942\models\FloorLimitIndicator;
-use AndrewSvirin\MT942\models\Statement;
-use AndrewSvirin\MT942\models\StatementInformation;
-use AndrewSvirin\MT942\models\StatementLine;
-use AndrewSvirin\MT942\models\StatementNumber;
-use AndrewSvirin\MT942\models\Summary;
-use AndrewSvirin\MT942\models\Transaction;
+use EbicsApi\MT942\models\AccountIdentification;
+use EbicsApi\MT942\models\FloorLimitIndicator;
+use EbicsApi\MT942\models\Statement;
+use EbicsApi\MT942\models\StatementInformation;
+use EbicsApi\MT942\models\StatementLine;
+use EbicsApi\MT942\models\StatementNumber;
+use EbicsApi\MT942\models\Summary;
+use EbicsApi\MT942\models\Transaction;
 use DateTime;
 use RuntimeException;
 
@@ -56,7 +56,7 @@ final class MT942Normalizer extends MT942Formatter
     {
         // Extract from record pairs code and message, all other keys are overhead.
         preg_match_all(
-            '/:(?!\n)(?<code>[0-9A-Z]*):(?<message>((?!\r\n:).)*)/s',
+            '/:(?!\n)(?<code>[0-9A-Z]*):(?<message>((?!\n:).)*)/s',
             $str,
             $transactionDetails,
             PREG_SET_ORDER

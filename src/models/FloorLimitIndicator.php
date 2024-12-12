@@ -1,8 +1,8 @@
 <?php
 
-namespace AndrewSvirin\MT942\models;
+namespace EbicsApi\MT942\models;
 
-use AndrewSvirin\MT942\contracts\MarkInterface;
+use EbicsApi\MT942\contracts\MarkInterface;
 use Symfony\Component\Validator\Constraints\Choice;
 use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Type;
